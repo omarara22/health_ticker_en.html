@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dubai Health Authority News Ticker</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      direction: ltr;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f8f8;
+    }
+    .ticker-container {
+      background-color: #006c74;
+      color: white;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 10px 0;
+      position: relative;
+    }
+    .ticker-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-ltr 25s linear infinite;
+      font-size: 16px;
+    }
+    .ticker-container:hover .ticker-text {
+      animation-play-state: paused;
+    }
+    @keyframes scroll-ltr {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="ticker-container">
+    <div class="ticker-text">
+      Notice: The Customer Happiness Center Hall will be closed on Friday for maintenance | A health awareness campaign will start next week and be published on Dubai Health Authority's official pages | The Sheryan system will be upgraded next week
+    </div>
+  </div>
+</body>
+</html>
